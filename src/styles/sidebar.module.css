@@ -1,0 +1,72 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: #263043;
+}
+
+.sidebar.sidebar-responsive {
+  display: inline;
+  position: fixed;
+  z-index: 2;
+  width: 260px;
+  height: 100%;
+}
+
+.sidebar .sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar .sidebar-title .sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar .sidebar-title .sidebar-brand a,
+.sidebar .sidebar-list a {
+  text-decoration: none;
+  color: #9e9ea4;
+}
+
+.sidebar .icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.sidebar .sidebar-title .sidebar-brand .header-icon {
+  font-size: 26px;
+}
+
+.sidebar .sidebar-title .close-icon {
+  color: red;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar .sidebar-list {
+  list-style: none;
+}
+
+.sidebar .sidebar-list .sidebar-list-item {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.sidebar .sidebar-list .sidebar-list-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar .sidebar-title .close-icon {
+    display: inline;
+  }
+}
